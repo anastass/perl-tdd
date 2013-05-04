@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 6;
+use Test::More tests => 8;
 
 use_ok('Text::Para');
 
@@ -16,3 +16,15 @@ is($formatter->columns, 10, 'innitialize column with width to 10');
 
 $formatter->columns(8);
 is($formatter->columns, 8, 'innitialize column with width to 8');
+
+is(
+   $formatter->format(""),
+   "",
+   'empty string formatted correctly'
+);
+
+is(
+   $formatter->format("one two"),
+   'one two',
+   'short line formatted correctly'
+);
