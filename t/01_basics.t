@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 8;
+use Test::More tests => 10;
 
 use_ok('Text::Para');
 
@@ -27,4 +27,16 @@ is(
    $formatter->format("one two"),
    'one two',
    'short line formatted correctly'
+);
+
+is(
+   $formatter->format(" one"),
+   'one',
+   'leading space was stripped'
+);
+
+is(
+   $formatter->format(" one  "),
+   'one',
+   'traling space was stripped too'
 );
