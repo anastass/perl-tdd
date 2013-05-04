@@ -1,4 +1,5 @@
 perl-tdd
 ========
 
-Code from An Introduction to Test Drivern Development Using Perl by Grant McLean 
+Code from An An Introduction to Test Driven Development Using Perl by Grant McLean
+Add some code from Moose Manual
