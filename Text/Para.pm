@@ -9,7 +9,8 @@ sub format {
     
     $text =~ s/\A\s+//;
     $text =~ s/\s+\Z//;
-    return $text;
+    my @words = split /\s+/, $text;
+    return join ' ', @words;
 }
 
 1;

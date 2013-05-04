@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 10;
+use Test::More tests => 11;
 
 use_ok('Text::Para');
 
@@ -39,4 +39,10 @@ is(
    $formatter->format(" one  "),
    'one',
    'traling space was stripped too'
+);
+
+is(
+   $formatter->format("one  two"),
+   'one two',
+   'extra internal whitespace handle correclty'
 );
