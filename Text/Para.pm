@@ -7,9 +7,7 @@ has 'columns' => (is => 'rw', isa => 'Int', default => 72);
 sub format {
     my($self, $text) = @_;
     
-    $text =~ s/\A\s+//;
-    $text =~ s/\s+\Z//;
-    my @words = split /\s+/, $text;
+    my @words = $text =~ m/(\S+)/g;
     return join ' ', @words;
 }
 
