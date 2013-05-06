@@ -2,7 +2,26 @@
 <!-- Komodo Project File - DO NOT EDIT -->
 <project id="63f89382-27c1-4f67-b4cd-e5cef2265893" kpf_version="5" name="perl-tdd.komodoproject">
 <preference-set idref="63f89382-27c1-4f67-b4cd-e5cef2265893">
+  <string id="currentInvocationLanguage">Perl</string>
+  <string id="language">Perl</string>
+  <string id="lastInvocation"></string>
+  <string id="lastTestPlanName_pref">01_basics.t</string>
 <preference-set id="testPlans">
+<preference-set id="01_basics.t">
+  <string id="command_line">prove t/01_basics.t</string>
+  <string relative="url" id="directory"></string>
+  <string id="language">Perl - TAP (*.t)</string>
+</preference-set>
+<preference-set id="02_moose.t">
+  <string id="command_line">prove t/02_moose.t</string>
+  <string relative="url" id="directory"></string>
+  <string id="language">Perl - TAP (*.t)</string>
+</preference-set>
+<preference-set id="03_simpletest.t">
+  <string id="command_line">prove t/03_simpletest.t</string>
+  <string relative="url" id="directory"></string>
+  <string id="language">Perl - TAP (*.t)</string>
+</preference-set>
 <preference-set id="person.t">
   <string id="command_line">prove t/Person.t</string>
   <string relative="url" id="directory"></string>
