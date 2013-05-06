@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Komodo Project File - DO NOT EDIT -->
 <project id="63f89382-27c1-4f67-b4cd-e5cef2265893" kpf_version="5" name="perl-tdd.komodoproject">
+<preference-set idref="63f89382-27c1-4f67-b4cd-e5cef2265893">
+<preference-set id="testPlans">
+<preference-set id="person.t">
+  <string id="command_line">prove t/Person.t</string>
+  <string relative="url" id="directory"></string>
+  <string id="language">Perl - TAP (*.t)</string>
+</preference-set>
+</preference-set>
+</preference-set>
 </project>

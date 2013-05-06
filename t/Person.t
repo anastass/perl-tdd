@@ -1,6 +1,6 @@
 use strict;
 use warnings;
-use Test::More 'no_plan';# tests => 1;
+use Test::More tests => 5;
 use_ok('Lib::Person');
 my $person = Lib::Person->new;
 isa_ok($person, 'Lib::Person');
@@ -14,4 +14,4 @@ is($person->FirstName, FIRST_NAME, 'FirstName is OK');
 $person->LastName(LAST_NAME);
 is($person->LastName, LAST_NAME, 'LastName is OK');
 
-is($person->full_name(FIRST_NAME, LAST_NAME), FIRST_NAME. " " . LAST_NAME, 'full_name() is OK');
+is($person->full_name(), FIRST_NAME. " " . LAST_NAME, 'full_name() is OK');

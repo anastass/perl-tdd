@@ -6,8 +6,8 @@ has 'LastName' => (is => 'rw', isa => 'Str');
 
 
 sub full_name {
-    my ($FirstName, $LastName) = @_[1..2];
-    return "$FirstName $LastName";
+    my $self = shift;
+    return $self->FirstName . " " . $self->LastName;
 }
 
 1;
