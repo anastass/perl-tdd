@@ -22,6 +22,11 @@
   <string relative="url" id="directory"></string>
   <string id="language">Perl - TAP (*.t)</string>
 </preference-set>
+<preference-set id="demo-final.t">
+  <string id="command_line">prove t/demo-final.t</string>
+  <string relative="url" id="directory"></string>
+  <string id="language">Perl - TAP (*.t)</string>
+</preference-set>
 <preference-set id="person.t">
   <string id="command_line">prove t/Person.t</string>
   <string relative="url" id="directory"></string>
