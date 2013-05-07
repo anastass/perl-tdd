@@ -5,7 +5,7 @@
   <string id="currentInvocationLanguage">Perl</string>
   <string id="language">Perl</string>
   <string id="lastInvocation"></string>
-  <string id="lastTestPlanName_pref">01_basics.t</string>
+  <string id="lastTestPlanName_pref">demo_unit_tests.t</string>
 <preference-set id="testPlans">
 <preference-set id="01_basics.t">
   <string id="command_line">prove t/01_basics.t</string>
@@ -22,8 +22,8 @@
   <string relative="url" id="directory"></string>
   <string id="language">Perl - TAP (*.t)</string>
 </preference-set>
-<preference-set id="demo-final.t">
-  <string id="command_line">prove t/demo-final.t</string>
+<preference-set id="demo_unit_tests.t">
+  <string id="command_line">prove t/demo_unit_tests.t</string>
   <string relative="url" id="directory"></string>
   <string id="language">Perl - TAP (*.t)</string>
 </preference-set>

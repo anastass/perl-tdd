@@ -35,7 +35,7 @@ sub format_para {
             my $part = substr $word, 0, $self->columns - 1, '';
             $para .= "\n$part-\n";
             $cols_left = $self->columns;
-            unshift @words, $word if length $word;
+            unshift @words, $word;
         }
     }
     
