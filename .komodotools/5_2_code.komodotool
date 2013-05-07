@@ -1,0 +1,12 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "5.2_code", 
+  "value": [
+    "package Text::Para;\n\nuse Moose;\n!@#_currentPos!@#_anchor", 
+    "has 'columns' => (is => 'rw', isa => 'Int', default => 72);\n\nsub format {\n    my($self, $text) = @_;\n    $text =~ s/\\A\\s+//;\n    $text =~ s/\\s+\\Z//;\n    return $text;\n}\n\n1;"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}

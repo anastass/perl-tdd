@@ -1,0 +1,17 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "4.3_test", 
+  "value": [
+    "use strict;\nuse warnings;\n\n!@#_currentPos!@#_anchoruse Test::More 'no_plan';# tests => 1;\n", 
+    "use_ok('Text::Para');", 
+    "", 
+    "my $formatter = Text::Para->new;", 
+    "isa_ok($formatter, 'Text::Para');", 
+    "", 
+    "can_ok($formatter, 'columns');\n\n$formatter = Text::Para->new(columns => 10);\nis($formatter->columns, 10, 'initialised column width to 10');\n\n$formatter->columns(8);\nis($formatter->columns, 8, 'successfully set column width to 8');\n\nis(\n    $formatter->format(\"\"),\n    \"\",\n    'empty string formatted correctly'\n);\n\nis(\n    $formatter->format('one two'),\n    'one two',\n    'short line formatted correctly'\n);\n"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}

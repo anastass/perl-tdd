@@ -1,0 +1,11 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "3.4_code_column_width", 
+  "value": [
+    "package Text::Para;\n\nuse Moose;\n\nhas 'columns' => (is => 'rw', isa => 'Int', default => 72);\n!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}

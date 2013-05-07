@@ -1,0 +1,15 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "8.2_code", 
+  "value": [
+    "package Text::Para;\n\nuse Moose;\n\nhas 'columns' => (is => 'rw', isa => 'Int', default => 72);\n\nsub format {\n    my($self, $text) = @_;\n", 
+    "    my @words = $text =~ m/(\\S+)/g;", 
+    "    my $para = '';", 
+    "    my $cols_left = $self->columns;", 
+    "!@#_currentPos!@#_anchor\n    while(@words) {\n        my $word = shift @words;\n        my $word_length = length $word;\n        if($cols_left > $word_length) {\n            $para .= ' ' if $cols_left < $self->columns;\n            $para .= $word;\n            $cols_left -= $word_length;\n        }\n        elsif($word_length <= $self->columns) {\n            $para .= \"\\n$word\";\n            $cols_left = $self->columns - $word_length;\n        }\n        else {\n            my $part = substr $word, 0, $self->columns - 1, '';\n            $para .= \"\\n$part-\\n\";\n            $cols_left = $self->columns;\n            unshift @words, $word if length $word;\n        }\n    }\n    \n    return $para;\n}\n\n1;"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}

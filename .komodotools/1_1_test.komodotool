@@ -1,0 +1,15 @@
+{
+  "name": "1.1_test", 
+  "value": [
+    "!@#_anchoruse strict;", 
+    "use warnings;", 
+    "", 
+    "use Test::More 'no_plan';", 
+    "", 
+    "use_ok('Text::Para');!@#_currentPos"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}

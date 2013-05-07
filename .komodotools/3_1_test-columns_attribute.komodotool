@@ -1,0 +1,16 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "3.1_test-columns_attribute", 
+  "value": [
+    "use strict;\nuse warnings;\n\nuse Test::More 'no_plan';# tests => 1;", 
+    "", 
+    "use_ok('Text::Para');", 
+    "", 
+    "my $formatter = Text::Para->new;", 
+    "isa_ok($formatter, 'Text::Para');\n!@#_anchor\ncan_ok($formatter, 'columns');\n!@#_currentPos"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}

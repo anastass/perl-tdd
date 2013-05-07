@@ -1,0 +1,23 @@
+{
+  "name": "5.5_code-refactored", 
+  "value": [
+    "!@#_anchorpackage Text::Para;", 
+    "", 
+    "use Moose;", 
+    "", 
+    "has 'columns' => (is => 'rw', isa => 'Int', default => 72);", 
+    "", 
+    "sub format {", 
+    "    my($self, $text) = @_;", 
+    "", 
+    "    my @words = $text =~ m/(\\S+)/g;", 
+    "    return join ' ', @words;", 
+    "}", 
+    "", 
+    "1;!@#_currentPos"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}

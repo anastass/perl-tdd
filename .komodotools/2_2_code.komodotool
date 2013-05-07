@@ -1,0 +1,17 @@
+{
+  "name": "2.2_code", 
+  "value": [
+    "!@#_anchorpackage Text::Para;", 
+    "", 
+    "use strict;", 
+    "use warnings;", 
+    "", 
+    "use Moose;", 
+    "", 
+    "1;!@#_currentPos"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}

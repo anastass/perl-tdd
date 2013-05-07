@@ -1,0 +1,14 @@
+{
+  "name": "2.3_code_no_warning", 
+  "value": [
+    "!@#_anchorpackage Text::Para;", 
+    "", 
+    "use Moose;", 
+    "", 
+    "1;!@#_currentPos"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}

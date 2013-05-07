@@ -1,0 +1,11 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "5.1_test-discard_spaces", 
+  "value": [
+    "use strict;\nuse warnings;\n\nuse Test::More 'no_plan';# tests => 1;\n\ncan_ok($formatter, 'columns');\n\n$formatter = Text::Para->new(columns => 10);\nis($formatter->columns, 10, 'initialised column width to 10');\n\n$formatter->columns(8);\nis($formatter->columns, 8, 'successfully set column width to 8');\n\nis(\n    $formatter->format(\"\"),\n    \"\",\n    'empty string formatted correctly'\n);\n\nis(\n    $formatter->format('one two'),\n    'one two',\n    'short line formatted correctly'\n);\n\nis(\n    $formatter->format(\" one\"),\n    \"one\",\n    'leading space was stripped'\n);\n\nis(\n    $formatter->format(\" one \"),\n    \"one\",\n    'trailing space was stripped too'\n);\n!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}

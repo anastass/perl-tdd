@@ -1,0 +1,11 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "2.1_test-constructor", 
+  "value": [
+    "use strict;\nuse warnings;\n\nuse Test::More 'no_plan';# tests => 1;\n\nuse_ok('Text::Para');\n\nmy $formatter = Text::Para->new;\nisa_ok($formatter, 'Text::Para');!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}

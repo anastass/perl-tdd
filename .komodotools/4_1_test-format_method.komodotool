@@ -1,0 +1,11 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "4.1_test-format_method", 
+  "value": [
+    "use strict;\nuse warnings;\n\nuse Test::More 'no_plan';# tests => 1;\n\ncan_ok($formatter, 'columns');\n\n$formatter = Text::Para->new(columns => 10);\nis($formatter->columns, 10, 'initialised column width to 10');\n\n$formatter->columns(8);\nis($formatter->columns, 8, 'successfully set column width to 8');\n\nis(\n\t$formatter->format(\"\"),\n\t\"\",\n\t'empty string formatted correctly'\n);\n!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}

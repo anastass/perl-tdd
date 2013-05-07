@@ -1,0 +1,13 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "1.2_code", 
+  "value": [
+    "package Text::Para;", 
+    "\nuse strict;\nuse warnings;", 
+    "!@#_currentPos!@#_anchor\n1;"
+  ], 
+  "set_selection": "true", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false"
+}
